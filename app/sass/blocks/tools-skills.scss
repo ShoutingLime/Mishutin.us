@@ -1,0 +1,169 @@
+.tools-skills {
+  min-height: 980px;
+  padding-top: 220px;
+  padding-bottom: 100px;
+  background-color: $black;
+  background-image: url(../img/tools-skills-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  font-size: 36px;
+  font-weight: 200;
+  color: $white;
+  overflow: hidden;
+}
+
+.tools-skills__header {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 700px;
+  text-align: center;
+  font-family: "OpenSans bold", Arial, sans-serif;
+  font-size: 36px;
+  color: $white;
+}
+
+.tools-skills__tools {
+  width: 42%;
+  padding-right: 70px;
+  text-align: right;
+  border-right: 2px solid $bordo;
+}
+
+.tools-skills__skills {
+  width: 58%;
+  padding-left: 70px;
+}
+
+.tools-skills__tools-header,
+.tools-skills__skills-header {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 80px;
+  padding-bottom: 10px;
+  font-weight: 200;
+  border-bottom: 3px solid $white;
+}
+
+.tools-skills__tools-css {
+  position: relative;
+  left: -1000px;
+  margin-bottom: 40px;
+  transition: left 0.5s ease-out 0.1s;
+}
+
+.tools-skills__tools-css > span {
+  color: $bordo;
+}
+
+.tools-skills__tools-html {
+  position: relative;
+  left: -1000px;
+  margin-bottom: 40px;
+  transition: left 1s ease-out 0.1s;
+}
+
+.tools-skills__tools-html > span {
+  color: $bordo;
+}
+
+.tools-skills__tools-js {
+  position: relative;
+  left: -1000px;
+  margin-bottom: 40px;
+  transition: left 1.5s ease-out 0.1s;
+}
+
+.tools-skills__tools-jq {
+  position: relative;
+  left: -1000px;
+  margin-bottom: 40px;
+  transition: left 2s ease-out 0.1s;
+}
+
+.tools-skills__tools-gulp {
+  position: relative;
+  left: -1000px;
+  margin-bottom: 40px;
+  transition: left 2.5s ease-out 0.1s;
+}
+
+.tools-skills__tools-sass {
+  position: relative;
+  left: -1000px;
+  margin-bottom: 0;
+  transition: left 3s ease-out 0.1s;
+}
+
+.tools-skills__skills-git {
+  position: relative;
+  left: 2000px;
+  margin-bottom: 40px;
+  transition: left 0.5s ease-out 0.1s;
+}
+
+.tools-skills__skills-git > span {
+  color: $bordo;
+}
+
+.tools-skills__skills-trello {
+  position: relative;
+  left: 2000px;
+  margin-bottom: 40px;
+  transition: left 1s ease-out 0.1s;
+}
+
+.tools-skills__skills-trello > span {
+  color: $bordo;
+}
+
+.tools-skills__skills-loyalty {
+  position: relative;
+  left: 2000px;
+  margin-bottom: 40px;
+  transition: left 1.5s ease-out 0.1s;
+}
+
+.tools-skills__skills-quality {
+  position: relative;
+  left: 2000px;
+  margin-bottom: 40px;
+  transition: left 2s ease-out 0.1s;
+}
+
+.tools-skills__skills-online {
+  position: relative;
+  left: 2000px;
+  margin-bottom: 40px;
+  transition: left 2.5s ease-out 0.1s;
+}
+
+.tools-skills__skills-mind {
+  position: relative;
+  left: 2000px;
+  margin-bottom: 40px;
+  transition: left 3s ease-out 0.1s;
+}
+
+.tools-skills__tools-css--animated,
+.tools-skills__tools-html--animated,
+.tools-skills__tools-js--animated,
+.tools-skills__tools-jq--animated,
+.tools-skills__tools-gulp--animated,
+.tools-skills__tools-sass--animated,
+.tools-skills__skills-git--animated,
+.tools-skills__skills-trello--animated,
+.tools-skills__skills-online--animated,
+.tools-skills__skills-loyalty--animated,
+.tools-skills__skills-quality--animated,
+.tools-skills__skills-mind--animated {
+  left: 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+.page-footer {
+  min-height: 100px;
+  display: flex;
+  background-color: $black;
+  border-top: 1px solid $gray;
+}
+
+.page-footer__left,
+.page-footer__middle,
+.page-footer__right {
+  width: 33.33%;
+}
+
+.page-footer__socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-footer__socials a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-footer__socials li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.page-footer__socials svg {
+  width: 50px;
+  height: 50px;
+}
+
+.page-footer__socials svg:hover {
+  opacity: 0.3;
+}
+
+.page-footer__copyright {
+  padding-top: 35px;
+  text-align: center;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 20px;
+  color: $white;
+}
+
+.page-footer__proofs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-footer__proofs a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-footer__proofs li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.page-footer__proofs svg {
+  width: 50px;
+  height: 50px;
+}
+
+.page-footer__proofs svg:hover {
+  opacity: 0.3;
+}
+
+.icon-github {
+  padding-top: 5px;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+/*.page-footer__proof--codepen svg {
+  width: 50px;
+  height: 50px;
+}*/
+
+.icon-codepen {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 50%;
+  background-color: $white;
+}

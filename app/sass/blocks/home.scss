@@ -1,0 +1,148 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 980px;
+  background-color: $black;
+  background-image: url(../img/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 130px;
+  background-size: cover;
+  font-family: Cookie, Arial, sans-serif;
+  font-size: 68px;
+  color: $white;
+}
+
+.home__row-top {
+  width: 100%;
+  min-height: 490px;
+}
+
+.home__column-left {
+  width: 45%;
+}
+
+.home__column-middle {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 35%;
+}
+
+.home__column-right {
+  width: 20%;
+}
+
+.home__row-bottom {
+  width: 100%;
+  display: flex;
+  min-height: 130px;
+}
+
+.home__acquaintance {
+  padding-top: 200px;
+  margin-bottom: 60px;
+  margin-left: 80px;
+}
+
+.home__hint {
+  margin-bottom: 40px;
+  margin-left: 190px;
+}
+
+.home__supposition {
+  padding-top: 112px;
+  margin-bottom: 145px;
+  margin-left: 40%;
+}
+
+.home__combinator {
+  width: 5%;
+  height: 252px;
+  align-self: flex-end;
+  margin-bottom: 64px;
+  border-right: 10px solid transparent;
+}
+
+.home__column-middle-wrapper {
+  width: 90%;
+}
+
+.home__responsive {
+  padding-top: 0;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+.home__reactive {
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+.home__reliable {
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+.home__brace {
+  width: 5%;
+  height: 252px;
+  align-self: flex-end;
+  margin-bottom: 64px;
+}
+
+.home__brace svg {
+  fill: transparent;
+}
+
+.home__website {
+  padding-top: 112px;
+  margin-left: 23%;
+}
+
+.home__offer {
+  padding-top: 0;
+  padding-bottom: 3px;
+  padding-left: 2px;
+  text-align: center;
+}
+
+.home__responsive-re,
+.home__reactive-re,
+.home__reliable-re {
+  color: $bordo;
+}
+
+.draw-border {
+  display: none;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -95px;
+}
+
+.home__left-mock,
+.home__right-mock {
+  width: 30%;
+}
+
+.home__right-mock {
+  display: flex;
+  padding-right: 23px;
+}
+
+.home__bottom-middle {
+  width: 545px;
+  margin-left: auto;
+}
+
+.draw-triangle {
+  display: block;
+  margin-left: auto;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+

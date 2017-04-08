@@ -1,0 +1,11 @@
+.page-header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  min-height: 130px;
+  z-index: 10;
+  background-color: $black;
+  padding-top: 20px;
+  padding-left: 80px;
+  border-bottom: 1px solid $gray;
+}

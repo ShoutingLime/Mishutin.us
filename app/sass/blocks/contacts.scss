@@ -1,0 +1,31 @@
+.contacts {
+  min-height: 880px;
+  background-color: $black;
+  background-image: url(../img/contacts-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__header {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 100px;
+  padding-top: 300px;
+  text-align: center;
+  font-family: "OpenSans bold", Arial, sans-serif;
+  font-size: 36px;
+  color: $white;
+}
+
+.contacts-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-content: space-between;
+}
+
+.contacts-icon {
+  width: 25%;
+  text-align: center;
+}

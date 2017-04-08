@@ -1,0 +1,13 @@
+.page {
+  min-width: 1270px;
+  margin: 0 auto;
+  @media ($mobile-widths-only) {
+    width: 320px;
+  }
+  @media ($tablet-widths) {
+    width: 700px;
+  }
+  @media ($desktop-widths) {
+    width: 100%;
+  }
+}

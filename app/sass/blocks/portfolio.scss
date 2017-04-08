@@ -1,0 +1,18 @@
+.portfolio {
+  min-height: 980px;
+  background-color: $black;
+  background-image: url(../img/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio__header {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 700px;
+  text-align: center;
+  font-family: "OpenSans bold", Arial, sans-serif;
+  font-size: 36px;
+  color: $white;
+}
