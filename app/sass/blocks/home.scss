@@ -1,51 +1,65 @@
 .home {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-height: 980px;
-  background-color: $black;
-  background-image: url(../img/home-bg.jpg);
+  height: 980px;
+  background-image: url(../img/bg-home.jpg);
   background-repeat: no-repeat;
-  background-position: 0 130px;
-  background-size: cover;
-  font-family: Cookie, Arial, sans-serif;
-  font-size: 68px;
+  background-position: 0 95px;
+  background-size: auto;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 40px;
+  line-height: 96px;
   color: $white;
 }
 
 .home__row-top {
-  width: 100%;
-  min-height: 490px;
+  width: 1200px;
+  min-height: 410px;
 }
 
 .home__column-left {
-  width: 45%;
+  width: 40%;
 }
 
 .home__column-middle {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   width: 35%;
 }
 
 .home__column-right {
-  width: 20%;
+  width: 25%;
 }
 
 .home__row-bottom {
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 130px;
 }
 
 .home__acquaintance {
-  padding-top: 200px;
-  margin-bottom: 60px;
+  display: inline-block;
+  padding-top: 285px;
+  padding-bottom: 1px;
+  margin-bottom: 35px;
   margin-left: 80px;
+  line-height: 72px;
+  border-bottom: 3px solid $bordo;
 }
 
 .home__hint {
-  margin-bottom: 40px;
-  margin-left: 190px;
+  margin-bottom: 0;
+  margin-left: 140px;
 }
 
 .home__supposition {
@@ -57,6 +71,8 @@
 .home__combinator {
   width: 5%;
   height: 252px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 64px;
   border-right: 10px solid transparent;
@@ -85,6 +101,8 @@
 .home__brace {
   width: 5%;
   height: 252px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
   margin-bottom: 64px;
 }
@@ -99,7 +117,7 @@
 }
 
 .home__offer {
-  padding-top: 0;
+  padding-top: 1px;
   padding-bottom: 3px;
   padding-left: 2px;
   text-align: center;
@@ -109,6 +127,7 @@
 .home__reactive-re,
 .home__reliable-re {
   color: $bordo;
+  font-weight: 800;
 }
 
 .draw-border {
@@ -125,6 +144,8 @@
 }
 
 .home__right-mock {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 23px;
 }
@@ -145,4 +166,3 @@
   margin-left: auto;
   margin-right: auto;
 }
-

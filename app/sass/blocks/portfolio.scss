@@ -1,18 +1,170 @@
 .portfolio {
-  min-height: 980px;
-  background-color: $black;
-  background-image: url(../img/portfolio-bg.jpg);
+  height: 980px;
+  background-image: url(../img/bg-portfolio.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .portfolio__header {
-  display: block;
+  display: inline-block;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 700px;
-  text-align: center;
-  font-family: "OpenSans bold", Arial, sans-serif;
-  font-size: 36px;
+  margin-bottom: 70px;
+  margin-left: 80px;
+  padding-top: 190px;
+  padding-bottom: 0;
+  text-align: left;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 54px;
   color: $white;
+  font-weight: 200;
+  border-bottom: 3px solid $bordo;
+}
+
+.portfolio__wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 31.33333%;
+  height: 520px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.col-2 {
+  width: 31.33333%;
+  height: 520px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.col-3 {
+  width: 31.33333%;
+  height: 520px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.portfolio__sedona img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.portfolio__pink img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.portfolio__bakery img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  &:hover {
+    opacity: 0.3;
+  }
+}
+
+.portfolio__project-description,
+.portfolio__project-technologies,
+.portfolio__project-link {
+  display: block;
+  text-align: center;
+  color: $white;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+a.portfolio__project-link {
+  text-decoration: none;
+  color: darkgray;
+}
+
+a.portfolio__project-link:hover {
+  color: $bordo;
+}
+
+.portfolio__githubpages {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  left: -20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  font-size: 15px;
+  color: $black;
+  background-color: $white;
+}
+
+.portfolio__row-bottom {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+}
+
+.portfolio__left-mock {
+  width: 30%;
+  margin-left: auto;
+}
+
+.portfolio__bottom-middle {
+  width: 545px;
+}
+
+.portfolio__right-mock {
+  width: 30%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 23px;
+}
+
+.portfolio__project-technologies {
+  margin-top: 20px;
+  color: #8ac8ff;
+}
+
+.col-3 > .portfolio__project-technologies {
+  margin-top: 56px;
+}
+
+.portfolio__project-link {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.col-1 > .portfolio__project-link {
+  margin-top: 56px;
 }

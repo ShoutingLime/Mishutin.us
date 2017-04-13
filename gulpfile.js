@@ -1,4 +1,4 @@
-/*global consol, includePaths*/
+/*global console, includePaths*/
 /*jslint node: true*/
 
 var gulp = require('gulp'),
@@ -99,7 +99,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function () {
     buildFonts = gulp.src([
       'app/fonts/**/*'
     ]).pipe(gulp.dest('dist/fonts'));
-  consol.log(buildFiles, buildCss, buildJs, buildFonts);
+  console.log(buildFiles, buildCss, buildJs, buildFonts);
 });
 
 gulp.task('deploy', function () {

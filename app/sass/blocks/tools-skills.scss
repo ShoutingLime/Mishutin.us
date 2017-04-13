@@ -1,27 +1,20 @@
 .tools-skills {
-  min-height: 980px;
+  height: 980px;
   padding-top: 220px;
-  padding-bottom: 100px;
-  background-color: $black;
-  background-image: url(../img/tools-skills-bg.jpg);
+  background-image: url(../img/bg-tools-skills.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
   font-size: 36px;
   font-weight: 200;
   color: $white;
   overflow: hidden;
 }
 
-.tools-skills__header {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 700px;
-  text-align: center;
-  font-family: "OpenSans bold", Arial, sans-serif;
-  font-size: 36px;
-  color: $white;
+.tools-skills__wrapper {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
 }
 
 .tools-skills__tools {
@@ -40,16 +33,16 @@
 .tools-skills__skills-header {
   display: inline-block;
   margin-top: 0;
-  margin-bottom: 80px;
-  padding-bottom: 10px;
+  margin-bottom: 70px;
+  padding-bottom: 1px;
   font-weight: 200;
-  border-bottom: 3px solid $white;
+  border-bottom: 3px solid $bordo;
 }
 
 .tools-skills__tools-css {
   position: relative;
   left: -1000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 0.5s ease-out 0.1s;
 }
 
@@ -60,7 +53,7 @@
 .tools-skills__tools-html {
   position: relative;
   left: -1000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 1s ease-out 0.1s;
 }
 
@@ -71,21 +64,21 @@
 .tools-skills__tools-js {
   position: relative;
   left: -1000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 1.5s ease-out 0.1s;
 }
 
 .tools-skills__tools-jq {
   position: relative;
   left: -1000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 2s ease-out 0.1s;
 }
 
 .tools-skills__tools-gulp {
   position: relative;
   left: -1000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 2.5s ease-out 0.1s;
 }
 
@@ -99,7 +92,7 @@
 .tools-skills__skills-git {
   position: relative;
   left: 2000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 0.5s ease-out 0.1s;
 }
 
@@ -110,7 +103,7 @@
 .tools-skills__skills-trello {
   position: relative;
   left: 2000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 1s ease-out 0.1s;
 }
 
@@ -121,28 +114,28 @@
 .tools-skills__skills-loyalty {
   position: relative;
   left: 2000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 1.5s ease-out 0.1s;
 }
 
 .tools-skills__skills-quality {
   position: relative;
   left: 2000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 2s ease-out 0.1s;
 }
 
 .tools-skills__skills-online {
   position: relative;
   left: 2000px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   transition: left 2.5s ease-out 0.1s;
 }
 
 .tools-skills__skills-mind {
   position: relative;
   left: 2000px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
   transition: left 3s ease-out 0.1s;
 }
 
@@ -161,9 +154,27 @@
   left: 0;
 }
 
+.tools-skills__row-bottom {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+}
 
+.tools-skills__left-mock {
+  width: 30%;
+  margin-left: auto;
+}
 
+.tools-skills__bottom-middle {
+  width: 545px;
+}
 
-
-
-
+.tools-skills__right-mock {
+  width: 30%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 23px;
+}

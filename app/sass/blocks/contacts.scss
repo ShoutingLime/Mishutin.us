@@ -1,20 +1,21 @@
 .contacts {
-  min-height: 880px;
-  background-color: $black;
-  background-image: url(../img/contacts-bg.jpg);
+  height: 880px;
+  background-image: url(../img/bg-contacts.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contacts__header {
-  display: block;
+  display: inline-block;
   margin-top: 0;
-  margin-bottom: 100px;
-  padding-top: 300px;
+  margin-left: 80px;
+  margin-bottom: 180px;
+  padding-top: 210px;
   text-align: center;
-  font-family: "OpenSans bold", Arial, sans-serif;
-  font-size: 36px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 54px;
   color: $white;
+  font-weight: 200;
+  border-bottom: 3px solid $bordo;
 }
 
 .contacts-icons {
@@ -28,4 +29,69 @@
 .contacts-icon {
   width: 25%;
   text-align: center;
+}
+
+.contacts-text {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-content: space-between;
+}
+
+.contacts-text__mail,
+.contacts-text__skype,
+.contacts-text__telegram,
+.contacts-text__slack {
+  width: 25%;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+}
+
+.contacts-text__mail > span,
+.contacts-text__skype > span,
+.contacts-text__telegram > span,
+.contacts-text__slack > span {
+  display: inline-block;
+  border-bottom: 2px solid $bordo;
+}
+
+.contacts-data {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-content: space-between;
+}
+
+.contacts-data__mail,
+.contacts-data__skype,
+.contacts-data__telegram,
+.contacts-data__slack {
+  width: 25%;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 50px;
+  color: $white;
+}
+
+.contacts-data__mail > a,
+.contacts-data__skype > a,
+.contacts-data__telegram > a,
+.contacts-data__slack > a {
+  font-size: 18px;
+  color: darkgray;
+  text-decoration: none;
+}
+
+.contacts-data__mail > a:hover,
+.contacts-data__skype > a:hover,
+.contacts-data__telegram > a:hover,
+.contacts-data__slack > a:hover {
+  color: $bordo;
+  text-decoration: none;
 }
