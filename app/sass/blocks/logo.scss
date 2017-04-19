@@ -1,9 +1,66 @@
-.logo {
-  width: 70px;
-  height: 70px;
+@media ($mobile-widths-only) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .logo-color-mobile {
+    display: block;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    fill: $white;
+    border-bottom: 1px solid $gray;
+    &:active a[href] {
+      fill: #8a0200;
+    }
+  }
+  .logo-color-tablet,
+  .logo-color-desktop {
+    display: none;
+  }
 }
 
-svg.logo-color {
-  width: 70px;
-  height: 70px;
+@media ($tablet-widths) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .logo-color-tablet {
+    display: block;
+    padding-top: 3px;
+    fill: $white;
+    &:hover a[href] {
+      fill: #8a0200;
+    }
+  }
+  .logo-color-mobile,
+  .logo-color-desktop {
+    display: none;
+  }
+}
+
+@media ($desktop-widths) {
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  .logo-color-desktop {
+    display: block;
+    padding-top: 10px;
+    fill: $white;
+    &:hover a[href] {
+      fill: #8a0200;
+    }
+  }
+  .logo-color-mobile,
+  .logo-color-tablet {
+    display: none;
+  }
+}
+
+.logo {
+  @media ($mobile-widths-only) {
+    float: left;
+  }
 }

@@ -28,7 +28,8 @@ var navHomeTop = document.getElementById('nav-home-top'),
   homeReliable = document.querySelector('.home__reliable'),
   homeWebsite = document.querySelector('.home__website'),
   homeCombinator = document.querySelector('.home__combinator'),
-  homeBrace = document.querySelector('.home__brace > svg'),
+  homeBraceDesktop = document.querySelector('.home__brace .brace-desktop'),
+  homeBraceTablet = document.querySelector('.home__brace .brace-tablet'),
   homeOffer = document.querySelector('.home__offer'),
   homeResponsiveRe = document.querySelector('.home__responsive-re'),
   homeReactiveRe = document.querySelector('.home__reactive-re'),
@@ -43,6 +44,7 @@ var navHomeTop = document.getElementById('nav-home-top'),
   canvasTriangleToolsSkills = document.querySelector('.draw-triangle__tools-skills'),
   line = document.querySelector('.line');
 
+// improvements for browsers
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
   navWrapperTop.style.clip = 'rect(-10px, 199px, 84px, 40px)';
@@ -231,7 +233,8 @@ document.addEventListener('DOMContentLoaded', function () {
   homeWebsite.style.color = 'transparent';
   homeOffer.style.color = 'transparent';
   homeCombinator.style.borderRightColor = 'transparent';
-  homeBrace.style.fill = 'transparent';
+  homeBraceDesktop.style.fill = 'transparent';
+  homeBraceTablet.style.fill = 'transparent';
   homeResponsiveRe.style.color = 'transparent';
   homeReactiveRe.style.color = 'transparent';
   homeReliableRe.style.color = 'transparent';
@@ -260,7 +263,15 @@ document.addEventListener('DOMContentLoaded', function () {
     homeReliableRe.style.color = '#8a0200';
   }, 3000);
   setTimeout(function () {
-    homeBrace.style.fill = '#8a0200';
+    if (document.body.clientWidth < 1200) {
+      homeBraceTablet.style.display = 'block';
+      homeBraceDesktop.style.display = 'none';
+      homeBraceTablet.style.fill = '#8a0200';
+    } else if (document.body.clientWidth >= 1200) {
+      homeBraceDesktop.style.display = 'block';
+      homeBraceTablet.style.display = 'none';
+      homeBraceDesktop.style.fill = '#8a0200';
+    }
   }, 3500);
   setTimeout(function () {
     homeWebsite.style.color = 'white';
@@ -614,3 +625,17 @@ setTimeout(function drawArrow() {
     bakery.style.marginTop = '70px';
   });
 }());
+
+/*
+// no change logo color in home
+(function () {
+  'use strict';
+  var logoDesktop = document.querySelector('svg.logo-color-desktop');
+  if (home) {
+    logoDesktop.addEventListener('mouseenter', function (e) {
+      e.preventDefault();
+      logoDesktop.style.fill = '#fff';
+    });
+  }
+}());
+*/

@@ -1,11 +1,21 @@
 .page-header {
-  display: block;
-  width: 1198px;
   position: fixed;
-  height: 95px;
   z-index: 10;
   background-color: $black;
-  padding-top: 10px;
-  padding-left: 78px;
   border-bottom: 1px solid $gray;
+  @media ($mobile-widths-only) {
+    width: 320px;
+  }
+  @media ($tablet-widths) {
+    width: 620px;
+    height: 76px;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  @media ($desktop-widths) {
+    width: 1122px;
+    height: 94px;
+    padding-top: 0;
+    padding-left: 78px;
+  }
 }
